@@ -174,7 +174,7 @@ export async function dataSave() {
 
 
 // setInterval(async () => {
-await dataSave();
+// await dataSave();
     // console.log('data업데이트 완료')
 // }, 600000);
 

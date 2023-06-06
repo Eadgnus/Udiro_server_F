@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/me', isAuth, authController.me);
 
-router.get('/account', isAuth, authController.myaccount);
+router.post('/account', isAuth, authController.myaccount);
 
 
 router.put('/update', authController.C_updateMypage)

@@ -7,7 +7,6 @@ const Auth_Error = { message: "인증 에러!" };
 export const isAuth = async (req, res, next) => {
     const authHeader = req.get("Authorization");
 
-
     if (!(authHeader && authHeader.startsWith("Bearer "))) {
         return res.status(401).json(Auth_Error);
     }
